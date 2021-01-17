@@ -58,7 +58,8 @@ $(function () {
             data: $(this).serialize(),
             success: function (res) {
                 if (res.status !== 0) {
-                    return layer.msg('登录失败')
+                    $('#mima').val('')
+                    return layer.msg('你输入的账号或密码不正确,请重新输入')
                 }
                 layer.msg('登录成功')
                 // 将token值保存到local

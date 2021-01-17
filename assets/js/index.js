@@ -37,7 +37,6 @@ $(function () {
                 // 3.2 渲染文本头像
                 $('.layui-nav-img').hide()
                 var first = name[0].toUpperCase()
-
                 $('.text-avatar')
                     .html(first)
                     .show()

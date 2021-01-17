@@ -31,9 +31,9 @@
                         个人中心
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                        <dd><a href="">更换头像</a></dd>
-                        <dd><a href="">设置密码</a></dd>
+                        <dd><a href="/user/user-info.html" target="fm">基本资料</a></dd>
+                        <dd><a href="/user/user-avatar.html" target="fm">更换头像</a></dd>
+                        <dd><a href="/user/user-pwd.html" target="fm">设置密码</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item" id="btnLogout"><a href="javascript:;"><span
@@ -74,11 +74,11 @@
 
                             个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;">
+                            <dd><a href="/user/user-info.html" target="fm">
                                     <i class="layui-icon layui-icon-about"></i>基本资料</a></dd>
-                            <dd><a href="javascript:;">
+                            <dd><a href="/user/user-avatar.html" target="fm">
                                     <i class="layui-icon layui-icon-picture-fine"></i>更换头像</a></dd>
-                            <dd><a href="javascript:;">
+                            <dd><a href="/user/user-pwd.html" target="fm">
                                     <i class="layui-icon layui-icon-auz"></i>设置密码</a></dd>
                         </dl>
                     </li>
@@ -107,46 +107,25 @@
     <!-- 导入index.js -->
     <script src="/assets/js/index.js"></script>
 
+    <!-- <script
+        type="text/javascript">var a_idx = 0; jQuery(document).ready(function ($) { $("body").click(function (e) { var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善"); var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.pageX, y = e.pageY; $i.css({ "z-index": 999999999999999999999999999999999999999999999999999999999999999999999, "top": y - 20, "left": x, "position": "absolute", "font-weight": "bold", "color": "#ff6651" }); $("body").append($i); $i.animate({ "top": y - 180, "opacity": 0 }, 1500, function () { $i.remove(); }); }); });</script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script type="text/javascript">var a_idx = 0; jQuery(document).ready(function ($) { $("body").click(function (e) { var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善"); var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.pageX, y = e.pageY; $i.css({ "z-index": 999999999999999999999999999999999999999999999999999999999999999999999, "top": y - 20, "left": x, "position": "absolute", "font-weight": "bold", "color": "#ff6651" }); $("body").append($i); $i.animate({ "top": y - 180, "opacity": 0 }, 1500, function () { $i.remove(); }); }); });
-    </script>
     <script>
         // 浏览器标题切换  
         var OriginTitile = document.title;    // 保存之前页面标题  
         var titleTime;
         document.addEventListener('visibilitychange', function () {
             if (document.hidden) {
-                document.title = '百度一下，你就知道';
+                document.title = 'Google一下，你就知道';
                 clearTimeout(titleTime);
             } else {
-                document.title = '百度一下，你就知道';
+                document.title = 'Google一下，你就知道';
                 titleTime = setTimeout(function () {
                     document.title = OriginTitile;
-                }, 1); // 2秒后恢复原标题  
+                }, 100); // 2秒后恢复原标题  
             }
         });  
-    </script>
-
-
+    </script> -->
 </body>
 
 </html>
-<!-- target 和iframe ?????????-->
